@@ -15,4 +15,4 @@ https://docs.google.com/document/d/1c2p__0YlCVgA7o_4xm32TbP3-qeCURBj9oQN9gezO_0/
 https://www.figma.com/file/CPT5fBlu6ILWL2sIWy0Mtm/Untitled?node-id=0%3A1
 
 ### Componentes
-[Untitled.pdf](https://github.com/MiguelJRM95/T-News/files/7440370/Untitled.pdf)
+![componente](https://user-images.githubusercontent.com/34045341/139405077-a47d0475-ce00-4d6f-9a45-07df7e7ed98c.PNG)

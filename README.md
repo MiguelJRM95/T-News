@@ -13,3 +13,6 @@ https://docs.google.com/document/d/1c2p__0YlCVgA7o_4xm32TbP3-qeCURBj9oQN9gezO_0/
 
 ###  :small_blue_diamond: MAPA NAVEGACIÓN
 https://www.figma.com/file/CPT5fBlu6ILWL2sIWy0Mtm/Untitled?node-id=0%3A1
+
+### Componentes
+[Untitled.pdf](https://github.com/MiguelJRM95/T-News/files/7440370/Untitled.pdf)

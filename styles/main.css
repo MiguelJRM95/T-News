@@ -1,71 +1,92 @@
-:root{
-    --primary-color: #7C98B3;
-    --header-height: 3em;
+:root {
+  --primary-color: #7c98b3;
+  --header-height: 3em;
 }
 
-*, *::after, ::before{
-    margin: 0 auto;
-    box-sizing: border-box;
+*,
+*::after,
+::before {
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
-
-header{
-    background: var(--primary-color);
-    padding: 10px 10px 0px 10px;
-    height: var(--header-height);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
+header {
+  background: var(--primary-color);
+  padding: 10px 10px 0px 10px;
+  height: var(--header-height);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
-nav>ul{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+#logo {
+  margin: 0;
+  padding-left: 1.5em;
 }
 
-ul>li{
-    margin-right: 1em;
-    list-style: none;
+nav {
+  margin: 0;
+  padding-right: 1.5em;
+}
+nav > ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 }
 
-a{
-    text-decoration: none;
-    color: whitesmoke;
+ul > li {
+  margin-right: 1em;
+  list-style: none;
 }
 
-ul>li:last-child{
-    margin-right: 0px auto;
+a {
+  text-decoration: none;
+  color: whitesmoke;
 }
 
-#logo{
-    height: 2em;
+ul > li:last-child {
+  margin-right: 0px auto;
+}
+
+#logo {
+  height: 2em;
 }
 
 main {
-    height: calc(100vh - var(--header-height));
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  height: calc(100vh - var(--header-height));
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.news{
-    margin-left: 20vw;
+.news {
+  margin-left: 20vw;
 }
 
-.tutoriales{
-    margin-right: 20vw;
+.tutoriales {
+  margin-right: 20vw;
 }
 
-footer{
-    position: fixed;
-    padding: 10px 10px 0px 10px;
-    bottom: 0;
-    width: 100%;
-            /* Height of the footer*/ 
-    height: 40px;
-    background: grey;
+footer {
+  position: fixed;
+  padding: 10px 10px 0px 10px;
+  bottom: 0;
+  width: 100%;
+  /* Height of the footer*/
+  height: 40px;
+  background: grey;
+}
+
+#footer-list {
+  float: right;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-list-item {
+  text-transform: uppercase;
 }

@@ -17,9 +17,12 @@
 
 <body>
     <header>
-        <div><a href="index.html"><img
-                    src="https://user-images.githubusercontent.com/34045341/138687249-c5446f6c-7c65-46b6-91d6-2c3cb379f39a.png"
-                    alt="logo" id="logo"></a></div>
+        <div id="logo-container">
+            <a href="index.html">
+                <img src="https://user-images.githubusercontent.com/34045341/138687249-c5446f6c-7c65-46b6-91d6-2c3cb379f39a.png"
+                    alt="logo" id="logo">
+            </a>
+        </div>
         <nav>
             <ul>
                 <li><a href="#">News</a></li>
@@ -30,9 +33,27 @@
         </nav>
     </header>
     <main>
-        <div class="news">News</div>
-        <div class="posts">Posts</div>
-        <div class="tutoriales">Tutoriales</div>
+        <div class="section-overview-container">
+            <t-overview></t-overview>
+            <t-overview></t-overview>
+            <t-overview></t-overview>
+            <t-overview></t-overview>
+            <t-overview></t-overview>
+        </div>
+        <div class="section-overview-container">
+            <t-overview></t-overview>
+            <t-overview></t-overview>
+            <t-overview></t-overview>
+            <t-overview></t-overview>
+            <t-overview></t-overview>
+        </div>
+        <div class="section-overview-container">
+            <t-overview></t-overview>
+            <t-overview></t-overview>
+            <t-overview></t-overview>
+            <t-overview></t-overview>
+            <t-overview></t-overview>
+        </div>
     </main>
     <footer>
         <ul id="footer-list">
@@ -42,6 +63,7 @@
             <li class="footer-list-item"><a href="#">Privacidad</a></li>
         </ul>
     </footer>
+    <script src="./js/components/overview.js"></script>
 </body>
 
 </html>

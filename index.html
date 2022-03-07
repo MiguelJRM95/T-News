@@ -28,31 +28,53 @@
                 <li><a href="#">News</a></li>
                 <li><a href="#">Posts</a></li>
                 <li><a href="#">Tutoriales</a></li>
-                <li><a href="#"><img src="./img/account.png" alt=""></a></li>
+                <li><a href="#"><img src="./img/account.png" alt="account" class="icon"></a></li>
             </ul>
         </nav>
     </header>
     <main>
         <div class="section-overview-container">
-            <t-overview></t-overview>
-            <t-overview></t-overview>
-            <t-overview></t-overview>
-            <t-overview></t-overview>
-            <t-overview></t-overview>
+            <t-overview title="Hola"
+                image="https://images.unsplash.com/photo-1645894183288-9c43d07958fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
+            </t-overview>
+            <t-overview title="Hola"
+                image="https://images.unsplash.com/photo-1646593692954-79fbd94f7233?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80">
+            </t-overview>
+            <t-overview title="Hola"
+                image="https://images.unsplash.com/photo-1645894183288-9c43d07958fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
+            </t-overview>
+            <t-overview title="Hola"
+                image="https://images.unsplash.com/photo-1646593692954-79fbd94f7233?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80">
+            </t-overview>
         </div>
         <div class="section-overview-container">
-            <t-overview></t-overview>
-            <t-overview></t-overview>
-            <t-overview></t-overview>
-            <t-overview></t-overview>
-            <t-overview></t-overview>
+            <t-overview title="Hola"
+                image="https://images.unsplash.com/photo-1645894183288-9c43d07958fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
+            </t-overview>
+            <t-overview title="Hola"
+                image="https://images.unsplash.com/photo-1646593692954-79fbd94f7233?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80">
+            </t-overview>
+            <t-overview
+                title="Hola Como estamos penita esto es un titulo to largo que flipas y a ver si nos salimos pero quizas otro dia lo hagamos jojojojojojoj"
+                image="https://images.unsplash.com/photo-1645894183288-9c43d07958fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
+            </t-overview>
+            <t-overview title="Hola"
+                image="https://images.unsplash.com/photo-1646593692954-79fbd94f7233?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80">
+            </t-overview>
         </div>
         <div class="section-overview-container">
-            <t-overview></t-overview>
-            <t-overview></t-overview>
-            <t-overview></t-overview>
-            <t-overview></t-overview>
-            <t-overview></t-overview>
+            <t-overview title="Hola"
+                image="https://images.unsplash.com/photo-1645894183288-9c43d07958fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
+            </t-overview>
+            <t-overview title="Hola"
+                image="https://images.unsplash.com/photo-1646593692954-79fbd94f7233?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80">
+            </t-overview>
+            <t-overview title="Hola"
+                image="https://images.unsplash.com/photo-1645894183288-9c43d07958fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
+            </t-overview>
+            <t-overview title="Hola"
+                image="https://images.unsplash.com/photo-1646593692954-79fbd94f7233?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80">
+            </t-overview>
         </div>
     </main>
     <footer>
@@ -64,6 +86,12 @@
         </ul>
     </footer>
     <script src="./js/components/overview.js"></script>
+    <script>
+        let customComp = document.querySelector("t-overview")
+        //console.log(customComp.title)
+        //console.log(customComp.image)
+        customComp.title = 'Adios'
+    </script>
 </body>
 
 </html>

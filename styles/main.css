@@ -1,6 +1,8 @@
 :root {
   --primary-color: #7c98b3;
   --header-height: 3em;
+  --footer-height: 40px;
+  --margin-1080p: 1em;
 }
 
 *,
@@ -60,16 +62,22 @@ ul > li:last-child {
 }
 
 main {
-  height: calc(100vh - var(--header-height));
+  min-height: calc(100vh - var(--header-height) - 40px - 2em);
+  height: fit-content;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 1.2em;
+  row-gap: 3.4em;
+  margin-top: var(--margin-1080p);
+  margin-bottom: calc(var(--margin-1080p) + var(--footer-height));
 }
 
 .section-overview-container {
   width: 400px;
-  height: 50vh;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   gap: 1em;
@@ -89,7 +97,7 @@ footer {
   bottom: 0;
   width: 100%;
   /* Height of the footer*/
-  height: 40px;
+  height: var(--footer-height);
   background: grey;
 }
 

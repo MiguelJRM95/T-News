@@ -95,7 +95,7 @@ footer {
 /*===============================================*/
 /*************************************************/
 /*CSS FAQS PARA DISPOSITIVOS DESKTOP HABITUALES*/
-#contenedorFaqs{
+#contenedorFaqs {
   position: absolute;
   top: 10%;
   left: 20%;
@@ -103,13 +103,13 @@ footer {
   width: 60%;
   text-align: center;
   overflow: auto;
-  box-shadow: 0px 0px 40px #536B78;
+  box-shadow: 0px 0px 40px #536b78;
   border-radius: 5px;
 }
-#contenedorFaqs h1{
+#contenedorFaqs h1 {
   margin-bottom: 0.4em;
 }
-.desplegablesFaqs{
+.desplegablesFaqs {
   position: relative;
   height: auto;
   width: 100%;
@@ -118,25 +118,26 @@ footer {
   text-align: center;
   border: 1px solid black;
 }
-.preguntasFaqs{
+
+.preguntasFaqs {
   background-color: #7c98b3;
   height: auto;
   padding: 1%;
+  cursor: pointer;
 }
-.preguntasFaqs:hover{
+.preguntasFaqs:hover {
   color: white;
   font-weight: bold;
 }
-.pFaqs{
-  display:none;
+.pFaqs {
+  display: none;
   text-align: left;
   padding: 1%;
 }
 /*************************************************/
 /*CSS FAQS PARA DISPOSITIVOS DESKTOP MAX-HEIGHT: 600PX*/
 @media only screen and (max-height: 600px) {
-  
-  #contenedorFaqs{
+  #contenedorFaqs {
     position: absolute;
     top: 30%;
     left: 20%;
@@ -150,7 +151,7 @@ footer {
 /*************************************************/
 /*CSS FAQS PARA DISPOSITIVOS MÓVILES MAX-WIDTH:400PX*/
 @media only screen and (max-width: 800px) {
-  #contenedorFaqs{
+  #contenedorFaqs {
     position: absolute;
     top: 10%;
     left: 10%;
@@ -158,7 +159,7 @@ footer {
     width: 80%;
     text-align: center;
     overflow: auto;
-    box-shadow: 0px 0px 40px #536B78;
+    box-shadow: 0px 0px 40px #536b78;
     border-radius: 5px;
   }
 }

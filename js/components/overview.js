@@ -1,7 +1,7 @@
 class Overview extends HTMLElement {
   static css = `
     :host {
-        width: 300px;
+        width: 400px;
         height: 120px;
         background: #cee5f1;
         overflow: hidden;
@@ -9,7 +9,7 @@ class Overview extends HTMLElement {
 
     .overview-container{
       position: relative;
-      width: 300px;
+      width: 400px;
       height: 120px;
       display: flex;
       justify-content: center;

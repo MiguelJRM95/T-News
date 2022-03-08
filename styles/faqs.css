@@ -1,6 +1,8 @@
 :root {
-  --primary-color: #7c98b3;
-  --header-height: 3em;
+  --primary-color: #cee5f1;
+    --header-height: 3em;
+    --footer-height: 40px;
+    --margin-1080p: 1em;
 }
 
 *,
@@ -10,22 +12,28 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
-
 header {
   background: var(--primary-color);
-  padding: 10px 10px 0px 10px;
   height: var(--header-height);
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
 
+#logo-container {
+  margin: 0;
+}
+
 #logo {
   margin: 0;
   padding-left: 1.5em;
+  filter: drop-shadow(-1px 1px 0px #222);
 }
-
+.icon {
+  width: 32px;
+}
 nav {
   margin: 0;
   padding-right: 1.5em;
@@ -44,7 +52,7 @@ ul > li {
 
 a {
   text-decoration: none;
-  color: whitesmoke;
+  color: #222;
 }
 
 ul > li:last-child {
@@ -76,9 +84,8 @@ footer {
   padding: 10px 10px 0px 10px;
   bottom: 0;
   width: 100%;
-  /* Height of the footer*/
-  height: 40px;
-  background: grey;
+  height: var(--footer-height);
+  background: #7c97b2;
 }
 
 #footer-list {
@@ -89,13 +96,33 @@ footer {
 
 .footer-list-item {
   text-transform: uppercase;
+  position: relative;
+}
+
+.footer-list-item::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: #0074d9;
+  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .footer-list-item:hover::before {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
 }
 /*===============================================*/
 /*INICIO FAQS                                    */
 /*===============================================*/
 /*************************************************/
 /*CSS FAQS PARA DISPOSITIVOS DESKTOP HABITUALES*/
-#contenedorFaqs {
+#contenedorFaqs{
   position: absolute;
   top: 10%;
   left: 20%;
@@ -103,13 +130,13 @@ footer {
   width: 60%;
   text-align: center;
   overflow: auto;
-  box-shadow: 0px 0px 40px #536b78;
+  box-shadow: 0px 0px 40px #536B78;
   border-radius: 5px;
 }
-#contenedorFaqs h1 {
+#contenedorFaqs h1{
   margin-bottom: 0.4em;
 }
-.desplegablesFaqs {
+.desplegablesFaqs{
   position: relative;
   height: auto;
   width: 100%;
@@ -118,26 +145,25 @@ footer {
   text-align: center;
   border: 1px solid black;
 }
-
-.preguntasFaqs {
+.preguntasFaqs{
   background-color: #7c98b3;
   height: auto;
   padding: 1%;
-  cursor: pointer;
 }
-.preguntasFaqs:hover {
+.preguntasFaqs:hover{
   color: white;
   font-weight: bold;
 }
-.pFaqs {
-  display: none;
+.pFaqs{
+  display:none;
   text-align: left;
   padding: 1%;
 }
 /*************************************************/
 /*CSS FAQS PARA DISPOSITIVOS DESKTOP MAX-HEIGHT: 600PX*/
 @media only screen and (max-height: 600px) {
-  #contenedorFaqs {
+  
+  #contenedorFaqs{
     position: absolute;
     top: 30%;
     left: 20%;
@@ -151,7 +177,7 @@ footer {
 /*************************************************/
 /*CSS FAQS PARA DISPOSITIVOS MÓVILES MAX-WIDTH:400PX*/
 @media only screen and (max-width: 800px) {
-  #contenedorFaqs {
+  #contenedorFaqs{
     position: absolute;
     top: 10%;
     left: 10%;
@@ -159,7 +185,7 @@ footer {
     width: 80%;
     text-align: center;
     overflow: auto;
-    box-shadow: 0px 0px 40px #536b78;
+    box-shadow: 0px 0px 40px #536B78;
     border-radius: 5px;
   }
 }

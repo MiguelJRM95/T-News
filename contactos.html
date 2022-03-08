@@ -11,9 +11,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/contactos.css">
     <title>T-News - Contactos</title>
-    <script type = "text/javascript" src = "jquery.js"> </script>
+    <script type="text/javascript" src="js/libs/jquery.js"> </script>
 </head>
 
 <body>
@@ -26,7 +27,7 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#">News</a></li>
+                <li><a href="noticias.html">News</a></li>
                 <li><a href="#">Posts</a></li>
                 <li><a href="#">Tutoriales</a></li>
                 <li><a href="#"><img src="./img/account.png" alt="account" class="icon"></a></li>
@@ -57,44 +58,29 @@
             <div id="divForm">
                 <form>
                     <label for="nombre"><b>Nombre</b></label><br>
-                    <input type="text" class="cajasTexto" id="nombre" name="nombre"><br><br>
+                    <input type="text" class="cajasTexto" id="nombre" name="nombre"><br>
                     <label for="apellidos"><b>Apellidos</b></label><br>
-                    <input type="text" class="cajasTexto" id="apellidos" name="apellidos"><br><br>
+                    <input type="text" class="cajasTexto" id="apellidos" name="apellidos"><br>
                     <label for="correo"><b>Correo Electrónico</b></label><br>
                     <input type="text" class="cajasTexto" id="correo" name="correo"><br><br>
-                    <label for="sugerencia"><b>Sugerencia</b></label><br>
+                    <label for="sugerencia"><b>Sugerencia</b></label>
                     <textarea class="cajasSubmit" id="sugerencia" name="sugerencia"></textarea><br>
                     <button type="submit" id="submitForm">Envía tu Sugerencia</button>
                 </form>
             </div>
-            
+
         </div>
-        
+
     </main>
     <footer>
         <ul id="footer-list">
-            <li class="footer-list-item"><a href="#">Contacto</a></li>
-            <li class="footer-list-item"><a href="#">Faq</a></li>
+            <li class="footer-list-item"><a href="contactos.html">Contacto</a></li>
+            <li class="footer-list-item"><a href="faqs.html">Faq</a></li>
             <li class="footer-list-item"><a href="#">Help</a></li>
             <li class="footer-list-item"><a href="#">Privacidad</a></li>
         </ul>
     </footer>
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $('input').focus(function(){
-                $(this).css({background:"lightblue"});
-            });
-            $('input').blur(function(){
-                $(this).css({background:"white"});
-            });
-            $('li').mouseover(function(){
-                $(this).css({color:"red"});
-            });
-            $('li').mouseout(function(){
-                $(this).css({color:"black"});
-            });
-        });
-    </script>
+    <script src="js/scripts/contactos.js"></script>
 </body>
 
 </html>

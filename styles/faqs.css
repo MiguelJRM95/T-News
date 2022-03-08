@@ -1,142 +1,27 @@
-:root {
-  --primary-color: #cee5f1;
-    --header-height: 3em;
-    --footer-height: 40px;
-    --margin-1080p: 1em;
-}
-
-*,
-*::after,
-::before {
-  margin: 0 auto;
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-}
-header {
-  background: var(--primary-color);
-  height: var(--header-height);
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-
-#logo-container {
-  margin: 0;
-}
-
-#logo {
-  margin: 0;
-  padding-left: 1.5em;
-  filter: drop-shadow(-1px 1px 0px #222);
-}
-.icon {
-  width: 32px;
-}
-nav {
-  margin: 0;
-  padding-right: 1.5em;
-}
-nav > ul {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-}
-
-ul > li {
-  margin-right: 1em;
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: #222;
-}
-
-ul > li:last-child {
-  margin-right: 0px auto;
-}
-
-#logo {
-  height: 2em;
-}
-
-main {
-  height: calc(100vh - var(--header-height));
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.news {
-  margin-left: 20vw;
-}
-
-.tutoriales {
-  margin-right: 20vw;
-}
-
-footer {
-  position: fixed;
-  padding: 10px 10px 0px 10px;
-  bottom: 0;
-  width: 100%;
-  height: var(--footer-height);
-  background: #7c97b2;
-}
-
-#footer-list {
-  float: right;
-  display: flex;
-  flex-direction: row;
-}
-
-.footer-list-item {
-  text-transform: uppercase;
-  position: relative;
-}
-
-.footer-list-item::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 0;
-  height: 2px;
-  background-color: #0074d9;
-  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
-}
-
-@media (hover: hover) and (pointer: fine) {
-  .footer-list-item:hover::before {
-    left: 0;
-    right: auto;
-    width: 100%;
-  }
-}
 /*===============================================*/
 /*INICIO FAQS                                    */
 /*===============================================*/
 /*************************************************/
 /*CSS FAQS PARA DISPOSITIVOS DESKTOP HABITUALES*/
-#contenedorFaqs{
-  position: absolute;
+main {
+  padding-bottom: var(--footer-height + 3em);
+  height: fit-content;
+}
+#contenedorFaqs {
+  /* position: absolute; */
   top: 10%;
   left: 20%;
-  height: 80%;
+  height: fit-content;
   width: 60%;
   text-align: center;
-  overflow: auto;
-  box-shadow: 0px 0px 40px #536B78;
+  /* overflow: auto; */
+  box-shadow: 0px 0px 40px #536b78;
   border-radius: 5px;
 }
-#contenedorFaqs h1{
+#contenedorFaqs h1 {
   margin-bottom: 0.4em;
 }
-.desplegablesFaqs{
+.desplegablesFaqs {
   position: relative;
   height: auto;
   width: 100%;
@@ -145,47 +30,55 @@ footer {
   text-align: center;
   border: 1px solid black;
 }
-.preguntasFaqs{
+.preguntasFaqs {
   background-color: #7c98b3;
   height: auto;
   padding: 1%;
+  cursor: pointer;
 }
-.preguntasFaqs:hover{
+.preguntasFaqs:hover {
   color: white;
   font-weight: bold;
 }
-.pFaqs{
-  display:none;
+.pFaqs {
+  display: none;
   text-align: left;
   padding: 1%;
 }
 /*************************************************/
 /*CSS FAQS PARA DISPOSITIVOS DESKTOP MAX-HEIGHT: 600PX*/
 @media only screen and (max-height: 600px) {
-  
-  #contenedorFaqs{
-    position: absolute;
+  main {
+    padding-bottom: var(--footer-height + 3em);
+    height: fit-content;
+  }
+  #contenedorFaqs {
+    /* position: absolute; */
     top: 30%;
     left: 20%;
-    height: 20%;
+    height: fit-content;
     width: 60%;
     text-align: center;
-    overflow: auto;
+    /* overflow: auto; */
   }
 }
 
 /*************************************************/
 /*CSS FAQS PARA DISPOSITIVOS MÓVILES MAX-WIDTH:400PX*/
+main {
+  padding-bottom: var(--footer-height + 3em);
+  height: fit-content;
+}
 @media only screen and (max-width: 800px) {
-  #contenedorFaqs{
-    position: absolute;
+  #contenedorFaqs {
+    /* position: absolute; */
     top: 10%;
     left: 10%;
-    height: 80%;
+    height: fit-content;
     width: 80%;
     text-align: center;
     overflow: auto;
-    box-shadow: 0px 0px 40px #536B78;
+    box-shadow: 0px 0px 40px #536b78;
     border-radius: 5px;
   }
 }

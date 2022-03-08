@@ -11,10 +11,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/contactos.css">
     <title>T-News - Contactos</title>
-    <script type="text/javascript" src="js/libs/jquery.js"> </script>
+    <script type = "text/javascript" src = "jquery.js"> </script>
 </head>
 
 <body>
@@ -68,9 +67,9 @@
                     <button type="submit" id="submitForm">Envía tu Sugerencia</button>
                 </form>
             </div>
-
+            
         </div>
-
+        
     </main>
     <footer>
         <ul id="footer-list">
@@ -80,7 +79,22 @@
             <li class="footer-list-item"><a href="#">Privacidad</a></li>
         </ul>
     </footer>
-    <script src="js/scripts/contactos.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('input').focus(function(){
+                $(this).css({background:"lightblue"});
+            });
+            $('input').blur(function(){
+                $(this).css({background:"white"});
+            });
+            $('li').mouseover(function(){
+                $(this).css({color:"red"});
+            });
+            $('li').mouseout(function(){
+                $(this).css({color:"black"});
+            });
+        });
+    </script>
 </body>
 
 </html>

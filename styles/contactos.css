@@ -1,8 +1,13 @@
 :root {
+<<<<<<< HEAD
   --primary-color: #cee5f1;
     --header-height: 3em;
     --footer-height: 40px;
     --margin-1080p: 1em;
+=======
+  --primary-color: #7c98b3;
+  --header-height: 3em;
+>>>>>>> develop_Miguel
 }
 
 *,
@@ -12,16 +17,25 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+<<<<<<< HEAD
 header {
   background: var(--primary-color);
   height: var(--header-height);
   width: 100%;
+=======
+
+header {
+  background: var(--primary-color);
+  padding: 10px 10px 0px 10px;
+  height: var(--header-height);
+>>>>>>> develop_Miguel
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
 
+<<<<<<< HEAD
 #logo-container {
   margin: 0;
 }
@@ -34,6 +48,13 @@ header {
 .icon {
   width: 32px;
 }
+=======
+#logo {
+  margin: 0;
+  padding-left: 1.5em;
+}
+
+>>>>>>> develop_Miguel
 nav {
   margin: 0;
   padding-right: 1.5em;
@@ -52,7 +73,11 @@ ul > li {
 
 a {
   text-decoration: none;
+<<<<<<< HEAD
   color: #222;
+=======
+  color: whitesmoke;
+>>>>>>> develop_Miguel
 }
 
 ul > li:last-child {
@@ -84,9 +109,17 @@ footer {
   padding: 10px 10px 0px 10px;
   bottom: 0;
   width: 100%;
+<<<<<<< HEAD
   height: var(--footer-height);
   background: #7c97b2;
 }
+=======
+  /* Height of the footer*/
+  height: 40px;
+  background: grey;
+}
+
+>>>>>>> develop_Miguel
 #footer-list {
   float: right;
   display: flex;
@@ -116,33 +149,56 @@ footer {
     width: 100%;
   }
 }
+<<<<<<< HEAD
+=======
+
+.icon {
+  width: 32px;
+}
+>>>>>>> develop_Miguel
 /*===============================================*/
 /*INICIO CONTACTOS                               */
 /*===============================================*/
 /*************************************************/
 /*CSS CONTACTOS PARA DISPOSITIVOS DESKTOP HABITUALES*/
+<<<<<<< HEAD
 #divContenedorForm{
+=======
+#divContenedorForm {
+>>>>>>> develop_Miguel
   position: relative;
   margin: 0 auto;
   height: 85%;
   width: 80%;
 }
+<<<<<<< HEAD
 #divContactos{
+=======
+#divContactos {
+>>>>>>> develop_Miguel
   position: absolute;
   top: 20%;
   height: 55%;
   width: 40%;
   padding: 1em;
+<<<<<<< HEAD
   background-color: #CEE5F2;
   box-shadow: 0px 0px 10px #536B78;
 }
 #divForm{
+=======
+  background-color: #cee5f2;
+  box-shadow: 0px 0px 10px #536b78;
+}
+#divForm {
+>>>>>>> develop_Miguel
   position: absolute;
   height: 98%;
   width: 50%;
   right: 10%;
   padding: 1em;
   border-radius: 5px;
+<<<<<<< HEAD
   background: linear-gradient(90deg, rgba(124,152,179,1) 100%, rgba(0,0,0,1) 100%);
   box-shadow: 0px 0px 40px #536B78;
   font-size: 1.5em;
@@ -152,10 +208,26 @@ footer {
   margin-bottom: 5px;
 }
 .cajasTexto{
+=======
+  background: linear-gradient(
+    90deg,
+    rgba(124, 152, 179, 1) 100%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  box-shadow: 0px 0px 40px #536b78;
+  font-size: 1.5em;
+}
+.elementosContactos {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.cajasTexto {
+>>>>>>> develop_Miguel
   width: 80%;
   height: 2em;
   border-radius: 5px;
 }
+<<<<<<< HEAD
 .cajasSubmit{
   height: 8em;
   width: 80%;
@@ -164,46 +236,80 @@ footer {
 #submitForm{
   background-color: lightblue;
   border: 1px solid #536B78;
+=======
+.cajasSubmit {
+  height: 8em;
+  width: 80%;
+}
+#submitForm {
+  background-color: lightblue;
+  border: 1px solid #536b78;
+>>>>>>> develop_Miguel
   color: black;
   padding: 5px;
   text-align: center;
 }
 #submitForm:hover {
+<<<<<<< HEAD
   background-color: #536B78;
+=======
+  background-color: #536b78;
+>>>>>>> develop_Miguel
   border: 1px solid lightblue;
 }
 /*************************************************/
 /*CSS CONTACTOS PARA DISPOSITIVOS  MAX-HEIGHT: 600PX*/
 @media only screen and (max-height: 600px) {
+<<<<<<< HEAD
   
   #divContactos{
+=======
+  #divContactos {
+>>>>>>> develop_Miguel
     position: absolute;
     top: 0%;
     height: 98%;
     width: 40%;
     word-break: break-all;
     padding: 0.5em;
+<<<<<<< HEAD
     background-color: #CEE5F2;
     box-shadow: 0px 0px 10px #536B78;
     overflow: scroll;
   }
   #divForm{
+=======
+    background-color: #cee5f2;
+    box-shadow: 0px 0px 10px #536b78;
+    overflow: scroll;
+  }
+  #divForm {
+>>>>>>> develop_Miguel
     position: absolute;
     height: 98%;
     width: 60%;
     right: 0%;
     padding: 1em;
     border-radius: 5px;
+<<<<<<< HEAD
     background-image: linear-gradient(to bottom right, #536B78, #CEE5F2);
     box-shadow: 0px 0px 40px #536B78;
     font-size: 1.5em;
     overflow: scroll;
   }
   
+=======
+    background-image: linear-gradient(to bottom right, #536b78, #cee5f2);
+    box-shadow: 0px 0px 40px #536b78;
+    font-size: 1.5em;
+    overflow: scroll;
+  }
+>>>>>>> develop_Miguel
 }
 /*************************************************/
 /*CSS CONTACTOS PARA DISPOSITIVOS MAX-WIDTH:1008PX*/
 @media only screen and (max-width: 1008px) {
+<<<<<<< HEAD
 
 #divContenedorForm{
   position: relative;
@@ -245,14 +351,62 @@ footer {
   resize: none;
 }
 
+=======
+  #divContenedorForm {
+    position: relative;
+    display: inline;
+    margin: 0 auto;
+    height: 80%;
+    width: 90%;
+  }
+  #divContactos {
+    position: absolute;
+    top: 0%;
+    height: 98%;
+    width: 40%;
+    word-break: break-all;
+    padding: 0.5em;
+    padding-top: 1em;
+    background-color: #cee5f2;
+    box-shadow: 0px 0px 10px #536b78;
+  }
+  #divForm {
+    position: absolute;
+    height: 98%;
+    width: 60%;
+    right: 0%;
+    padding: 1em;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom right, #536b78, #cee5f2);
+    box-shadow: 0px 0px 40px #536b78;
+    font-size: 1.5em;
+  }
+  .cajasTexto {
+    width: 100%;
+    height: 2em;
+    border-radius: 5px;
+  }
+  .cajasSubmit {
+    height: 6em;
+    width: 100%;
+  }
+>>>>>>> develop_Miguel
 }
 /*************************************************/
 /*CSS CONTACTOS PARA DISPOSITIVOS  MAX-WIDTH:400PX*/
 @media only screen and (max-width: 400px) {
+<<<<<<< HEAD
   #divContactos{
+=======
+  #divContactos {
+>>>>>>> develop_Miguel
     overflow: scroll;
   }
 }
 /*===============================================*/
 /*FIN CONTACTOS                               */
+<<<<<<< HEAD
 /*===============================================*/
+=======
+/*===============================================*/
+>>>>>>> develop_Miguel

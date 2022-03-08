@@ -15,7 +15,6 @@
 
 header {
   background: var(--primary-color);
-  /*padding: 10px 10px 0px 10px;*/
   height: var(--header-height);
   width: 100%;
   display: flex;
@@ -77,28 +76,11 @@ main {
   margin-bottom: calc(var(--margin-1080p) + var(--footer-height));
 }
 
-.section-overview-container {
-  width: 400px;
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-}
-
-.news {
-  margin-left: 20vw;
-}
-
-.tutoriales {
-  margin-right: 20vw;
-}
-
 footer {
   position: fixed;
   padding: 10px 10px 0px 10px;
   bottom: 0;
   width: 100%;
-  /* Height of the footer*/
   height: var(--footer-height);
   background: #7c97b2;
 }

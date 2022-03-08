@@ -1,0 +1,59 @@
+.section-overview-container {
+  width: 400px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+t-overview {
+  cursor: pointer;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  transition: transform 0.6s ease-in-out, box-shadow 0.7s ease-in-out;
+}
+
+t-overview:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.news {
+  margin-left: 20vw;
+}
+
+.tutoriales {
+  margin-right: 20vw;
+}
+
+.seccion {
+  animation: aparecer 0.6s ease-in-out;
+  z-index: -1;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(1.5em);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.desaparecer {
+  animation: desaparecer 0.6s ease-in-out;
+  z-index: -1;
+}
+
+@keyframes desaparecer {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(1.5em);
+  }
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/faqs.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>T-News - Faqs</title>
+    <script type="text/javascript" src="jquery.js"> </script>
+    <script>
+        $(document).ready(function () {
+            $(".desplegablesFaqs").click(function () {
+                $(this).children(":last").fadeToggle();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div><a href="index.html"><img
+                    src="https://user-images.githubusercontent.com/34045341/138687249-c5446f6c-7c65-46b6-91d6-2c3cb379f39a.png"
+                    alt="logo" id="logo"></a></div>
+        <nav>
+            <ul>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Posts</a></li>
+                <li><a href="#">Tutoriales</a></li>
+                <li><a href="#"><img src="./img/account.png" class="icon" alt="aux"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="contenedorFaqs">
+            <h1>Preguntas más frecuentes</h1><br><br>
+            <div class="desplegablesFaqs">
+                <p class="preguntasFaqs">
+                    <b>
+                        ¿La información de los post pasa por algún proceso de verificación?
+                    </b>
+                </p>
+                <div class="pFaqs">
+                    <p>
+                        <b>
+                            Somos conscientes de la importancia de publicar contenido verificado.
+                            Tanto los post de colaboradores como los post de usuarios son verificados
+                            manualmente con el objetivo de proveer contenido de calidad.
+                        </b>
+                    </p>
+                </div>
+            </div>
+            <div class="desplegablesFaqs">
+                <p class="preguntasFaqs">
+                    <b>
+                        ¿Durante cuanto tiempo se almacenan mis datos personales?
+                    </b>
+                </p>
+                <div class="pFaqs">
+                    <p>
+                        <b>
+                            Debido a la LOPD 15/1999 los datos se almacenan un máximo de 12 meses desde la
+                            cancelación de la cuenta. Tus datos nunca serán compartidos con terceros.
+                        </b>
+                    </p>
+                </div>
+            </div>
+            <div class="desplegablesFaqs">
+                <p class="preguntasFaqs">
+                    <b>
+                        ¿Cómo puedo contactar con T-News?
+                    </b>
+                </p>
+                <div class="pFaqs">
+                    <p>
+                        <b>
+                            Si deseas contactar con nosotros puedes hacerlo desde el link contactos.
+                            Escribenos por correo o mandanos directamente una sugerencia desde el formulario web.
+                        </b>
+                    </p>
+                </div>
+            </div>
+            <div class="desplegablesFaqs">
+                <p class="preguntasFaqs">
+                    <b>
+                        ¿Hay post patrocinados?
+                    </b>
+                </p>
+                <div class="pFaqs">
+                    <p>
+                        <b>
+                            Si. Los post patrocinados por marcas están destacados para que los lectores sean
+                            conscientes desde un primer momento de la campaña publicitaria.
+                        </b>
+                    </p>
+                </div>
+            </div>
+            <div class="desplegablesFaqs">
+                <p class="preguntasFaqs">
+                    <b>
+                        ¿Puedo trabajar para T-News como redactor?
+                    </b>
+                </p>
+                <div class="pFaqs">
+                    <p>
+                        <b>
+                            Si. Cada cierto tiempo publicamos vacantes para redactores, Seos y programadores.
+                        </b>
+                    </p>
+                </div>
+            </div>
+            <div class="desplegablesFaqs">
+                <p class="preguntasFaqs">
+                    <b>
+                        No logro iniciar sesión en mi cuenta.
+                    </b>
+                </p>
+                <div class="pFaqs">
+                    <p>
+                        <b>
+                            Recomendamos a nuestros usuarios cambiar la contraseña de acceso cada cierto tiempo
+                            como práctica de seguridad. Si no puedes acceder a tu cuenta solita un cambio de
+                            contraseña automático.
+                        </b>
+                    </p>
+                </div>
+            </div>
+            <div class="desplegablesFaqs">
+                <p class="preguntasFaqs">
+                    <b>
+                        He redactado y publicado mi post pero no aparece como público
+                    </b>
+                </p>
+                <div class="pFaqs">
+                    <p>
+                        <b>
+                            Todos los post pasan por un periodo de filtro y verificación generalmente inferior
+                            a las dos horas. Si tu post no aparece como publicado transcurridas 48 horas puedes
+                            contactarnos para recibir información.
+                        </b>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <ul id="footer-list">
+            <li class="footer-list-item"><a href="contactos.html">Contacto</a></li>
+            <li class="footer-list-item"><a href="faqs.html">Faq</a></li>
+            <li class="footer-list-item"><a href="#">Help</a></li>
+            <li class="footer-list-item"><a href="#">Privacidad</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>

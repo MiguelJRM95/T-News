@@ -15,21 +15,21 @@ class MasVisitados extends HTMLElement {
     this.innerHTML = `
             <style>
             #contenedor{
-                min-height:180px;
                 max-width:100%;
-                max-height:100%;
+                height:100%;
                 text-align:center;
                 word-break: break-all;
-                background-size: 264px 180px;
+                overflow: hidden;
+                // background-size: 264px 180px;
             }
             #contenedor-contraste{
-                background:rgba(0, 0, 0, 0.459);
+                background:rgba(0, 0, 0, 0.659);
                 padding-bottom:5px;
                 display:flex;
-                height:180px;
                 flex-direction:column;
                 justify-content:space-between;
                 align-items:center;
+                height: inherit;
             }
             #titulo{
                 margin-bottom: 6px;

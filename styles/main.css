@@ -8,7 +8,7 @@
 *,
 *::after,
 ::before {
-  margin: 0 auto;
+  margin: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
@@ -67,13 +67,19 @@ main {
   height: fit-content;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 1.2em;
   row-gap: 3.4em;
   margin-top: var(--margin-1080p);
   margin-bottom: calc(var(--margin-1080p) + var(--footer-height));
+}
+
+@media only screen and (max-width: 940px) {
+  main {
+    padding-bottom: calc(var(--footer-height) + 15em);
+  }
 }
 
 footer {

@@ -39,17 +39,16 @@ template.innerHTML = `
     </div>
 `;
 
-class lastNews extends HTMLElement{
-    constructor(){
-        super();
-        this.attachShadow({ mode:'open'});
-        this.shadowRoot.appendChild(template.content.cloneNode(true));
-        this.shadowRoot.querySelector('h3').innerText = this.getAttribute('titular');
-        this.shadowRoot.querySelector('p').innerText = this.getAttribute('texto');
-        this.shadowRoot.querySelector('img').src = this.getAttribute('foto');
-        
-    }
-
+class lastNews extends HTMLElement {
+  constructor() {
+    super();
+    this.attachShadow({ mode: "open" });
+    this.shadowRoot.appendChild(template.content.cloneNode(true));
+    this.shadowRoot.querySelector("h3").innerText =
+      this.getAttribute("titular");
+    this.shadowRoot.querySelector("p").innerText = this.getAttribute("texto");
+    this.shadowRoot.querySelector("img").src = this.getAttribute("foto");
+  }
 }
 
 window.customElements.define("last-news", lastNews);

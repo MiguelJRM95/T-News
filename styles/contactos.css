@@ -87,10 +87,10 @@ main {
     padding: 1em;
     border-radius: 5px;
     background: linear-gradient(
-    90deg,
-    rgba(124, 152, 179, 1) 100%,
-    rgba(0, 0, 0, 1) 100%
-  );
+      90deg,
+      rgba(124, 152, 179, 1) 100%,
+      rgba(0, 0, 0, 1) 100%
+    );
     box-shadow: 0px 0px 40px #536b78;
     font-size: 1.5em;
     overflow: scroll;
@@ -125,10 +125,10 @@ main {
     padding: 1em;
     border-radius: 5px;
     background: linear-gradient(
-    90deg,
-    rgba(124, 152, 179, 1) 100%,
-    rgba(0, 0, 0, 1) 100%
-  );
+      90deg,
+      rgba(124, 152, 179, 1) 100%,
+      rgba(0, 0, 0, 1) 100%
+    );
     box-shadow: 0px 0px 40px #536b78;
     font-size: 1.5em;
   }

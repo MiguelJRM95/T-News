@@ -6,6 +6,8 @@
 main {
   padding-bottom: var(--footer-height + 3em);
   height: fit-content;
+  display: flex;
+  align-items: center;
 }
 #contenedorFaqs {
   /* position: absolute; */

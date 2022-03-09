@@ -1,19 +1,18 @@
-class MasVisitados extends HTMLElement{
-    
-    constructor(){
-        super();
-        this.titulo=null;
-        this.imagen=null;
-        this.texto=null;
-    }
-    connectedCallback(){
-        this.titulo=this.getAttribute('titulo');
-        this.imagen=this.getAttribute('imagen');
-        this.texto=this.getAttribute('texto');
-        console.log(this.titulo);
-        console.log(this.imagen);
-        console.log(this.texto);
-        this.innerHTML=`
+class MasVisitados extends HTMLElement {
+  constructor() {
+    super();
+    this.titulo = null;
+    this.imagen = null;
+    this.texto = null;
+  }
+  connectedCallback() {
+    this.titulo = this.getAttribute("titulo");
+    this.imagen = this.getAttribute("imagen");
+    this.texto = this.getAttribute("texto");
+    console.log(this.titulo);
+    console.log(this.imagen);
+    console.log(this.texto);
+    this.innerHTML = `
             <style>
             #contenedor{
                 min-height:180px;
@@ -54,15 +53,14 @@ class MasVisitados extends HTMLElement{
             }
 
             </style>
-            <div id="contenedor" style="background-image: url(${this.imagen})">
+            <div id="contenedor" style="background-image: url(${this.imagen}); background-size: cover;">
                 <div id="contenedor-contraste">
                     <h2 id="titulo">${this.titulo}</h2>
                     <p id="texto">${this.texto}</p>
                 </div>
             </div>
                 `;
-    }
-    
+  }
 }
 
-window.customElements.define('mas-visitados', MasVisitados);
+window.customElements.define("mas-visitados", MasVisitados);

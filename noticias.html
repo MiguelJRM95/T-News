@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,7 +24,7 @@
                     alt="logo" id="logo"></a></div>
         <nav>
             <ul>
-                <li><a href="#">News</a></li>
+                <li><a href="noticias.html">News</a></li>
                 <li><a href="#">Posts</a></li>
                 <li><a href="#">Tutoriales</a></li>
                 <li><a href="#"><img src="./img/account.png" alt=""></a></li>
@@ -32,31 +33,40 @@
     </header>
 
     <main>
-    <div id="main-section-container">
-        <div id="nav">
-            <div id="miga">
-                <span>Home</span>
-                <span>Noticias</span>
+        <div id="main-section-container">
+            <div id="nav">
+                <div id="miga">
+                    <span>Home</span>
+                    <span>Noticias</span>
+                </div>
+                <span>Where I am?</span>
             </div>
-            <span>Where I am?</span>
+            <div class="section-news-container">
+                <last-news titular="TÍTULO ÚLTIMA NOTICIA 1" foto="./img/foto1.jpg"
+                    texto="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.">
+                </last-news>
+                <last-news titular="TÍTULO ÚLTIMA NOTICIA 2" foto="./img/foto2.jpg"
+                    texto="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.">
+                </last-news>
+                <last-news titular="TÍTULO ÚLTIMA NOTICIA 3" foto="./img/foto3.jpg"
+                    texto="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.">
+                </last-news>
+            </div>
         </div>
-        <div class="section-news-container">
-            <last-news titular="TÍTULO ÚLTIMA NOTICIA 1" foto="./img/foto1.jpg" texto="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."></last-news>
-            <last-news titular="TÍTULO ÚLTIMA NOTICIA 2" foto="./img/foto2.jpg" texto="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."></last-news>
-            <last-news titular="TÍTULO ÚLTIMA NOTICIA 3" foto="./img/foto3.jpg" texto="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."></last-news>
+        <div class="section-visited-container">
+            <mas-visitados titulo="NOTICIA MÁS VISITADA 1" imagen="./img/foto2.jpg"
+                texto="Lorem ipsum dolor sit amet, consectetur adipiscing elit"></mas-visitados>
+            <mas-visitados titulo="NOTICIA MÁS VISITADA 2" imagen="./img/foto1.jpg"
+                texto="Lorem ipsum dolor sit amet, consectetur adipiscing elit"></mas-visitados>
+            <mas-visitados titulo="NOTICIA MÁS VISITADA 3" imagen="./img/foto3.jpg"
+                texto="Lorem ipsum dolor sit amet, consectetur adipiscing elit"></mas-visitados>
         </div>
-    </div>
-    <div class="section-visited-container">
-        <mas-visitados titulo="NOTICIA MÁS VISITADA 1" imagen="./img/foto2.jpg" texto="Lorem ipsum dolor sit amet, consectetur adipiscing elit"></mas-visitados>
-        <mas-visitados titulo="NOTICIA MÁS VISITADA 2" imagen="./img/foto1.jpg" texto="Lorem ipsum dolor sit amet, consectetur adipiscing elit"></mas-visitados>
-        <mas-visitados titulo="NOTICIA MÁS VISITADA 3" imagen="./img/foto3.jpg" texto="Lorem ipsum dolor sit amet, consectetur adipiscing elit"></mas-visitados>
-    </div>
     </main>
 
     <footer>
         <ul id="footer-list">
-            <li class="footer-list-item"><a href="#">Contacto</a></li>
-            <li class="footer-list-item"><a href="#">Faq</a></li>
+            <li class="footer-list-item"><a href="contactos.html">Contacto</a></li>
+            <li class="footer-list-item"><a href="faqs.html">Faq</a></li>
             <li class="footer-list-item"><a href="#">Help</a></li>
             <li class="footer-list-item"><a href="#">Privacidad</a></li>
         </ul>
@@ -65,4 +75,5 @@
     <script src="./js/components/visitados.js"></script>
     <script src="./js/scripts/index.js"></script>
 </body>
+
 </html>
